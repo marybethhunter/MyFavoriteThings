@@ -8,6 +8,14 @@ namespace MyFavoriteThings.FavThings
 {
     public class Tattoo
     {
+
+        public Tattoo(string name, string bodypart, string shop, bool isfavorite)
+        {
+            Name = name;
+            BodyPart = bodypart;
+            Shop = shop;
+            IsFavorite = isfavorite;
+        }
         public string Name { get; set; }
         public string BodyPart { get; set; }
         public string Shop { get; set; }
