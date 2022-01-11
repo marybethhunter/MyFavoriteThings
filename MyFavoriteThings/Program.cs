@@ -28,21 +28,21 @@ namespace MyFavoriteThings
                 CupsPerDay = 3,
             };
 
-            Tattoo tattoo1 = new Tattoo
-            {
-                Name = "peony",
-                BodyPart = "inner bicep",
-                Shop = "Ironclad Tattoo",
-                IsFavorite = true,
-            };
+            Tattoo tattoo1 = new("peony", "inner bicep", "Ironclad Tattoo", true);
+            //{
+            //    Name = "peony",
+            //    BodyPart = "inner bicep",
+            //    Shop = "Ironclad Tattoo",
+            //    IsFavorite = true,
+            //};
 
-            Tattoo tattoo2 = new Tattoo
-            {
-                Name = "mom tattoo",
-                BodyPart = "inner bicep",
-                Shop = "Ironclad Tattoo",
-                IsFavorite = false,
-            };
+            Tattoo tattoo2 = new("mom tattoo", "inner bicep", "Ironclad Tattoo", false);
+            //{
+            //    Name = "mom tattoo",
+            //    BodyPart = "inner bicep",
+            //    Shop = "Ironclad Tattoo",
+            //    IsFavorite = false,
+            //};
 
             Console.WriteLine($"My son's name is {kid.Name}. He has {kid.HairColor.ToLower()} hair and is in {kid.SchoolLevel}.");
             kid.FallDown();
